@@ -1,0 +1,30 @@
+.menu__container {
+  position: fixed;
+  z-index: 6;
+  bottom: 0;
+  background-color: #151515;
+  height: 7rem;
+  width: 100%;
+  &__content {
+    height: 100%;
+    &__logo {
+    }
+    &__links {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 0.5rem;
+      }
+    }
+  }
+}

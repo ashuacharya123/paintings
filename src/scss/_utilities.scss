@@ -1,0 +1,30 @@
+@use "./variables";
+
+.u-ff {
+  font-family: "Life Savers", sans-serif;
+}
+
+.u-lsn {
+  list-style: none;
+}
+
+.u-fw-regular {
+  font-weight: variables.$font-weight-regular;
+}
+.u-fw-medium {
+  font-weight: variables.$font-weight-medium;
+}
+.u-fw-bold {
+  font-weight: variables.$font-weight-bold;
+}
+
+.u-ml {
+  margin-left: 3rem;
+}
+.u-mr {
+  margin-right: 3rem;
+}
+
+.u-ttu {
+  text-transform: uppercase;
+}

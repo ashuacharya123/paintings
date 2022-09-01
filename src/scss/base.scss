@@ -1,0 +1,62 @@
+@use "./utilities";
+@use "./hero.scss";
+@use "./variables";
+@use "./menu";
+@use "./footer";
+
+@import url("http://fonts.cdnfonts.com/css/life-savers?styles=20023");
+@import url("http://fonts.cdnfonts.com/css/sansation?styles=756,755,754");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Sansation", sans-serif;
+  background-color: #d0d0d0;
+}
+
+img {
+  max-width: 100%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes outline {
+  0% {
+    outline-offset: 2rem;
+    outline: 0.8rem solid variables.$color-outline;
+  }
+  50% {
+    outline-offset: 0rem;
+    outline: 0.1rem solid variables.$color-outline;
+  }
+  0% {
+    outline-offset: 2rem;
+    outline: 0.8rem solid variables.$color-outline;
+  }
+}
