@@ -60,6 +60,9 @@
   top: 60%;
   left: -250%;
   background: #000;
+  transform: scale(10);
+  animation: scale 0.5s linear;
+  animation-fill-mode: forwards;
   z-index: -1;
 }
 .hero__container__content__upper__up__paragraph {
@@ -79,7 +82,6 @@
 .hero__container__content__upper__low__images li:nth-of-type(1) {
   grid-area: 1/2;
   transform: translateY(-5%) translateX(-25%);
-  box-shadow: 0px 0px 25rem 2rem rgba(0, 0, 0, 0.48);
 }
 .hero__container__content__upper__low__images li:nth-of-type(3) {
   grid-area: 2/2;
@@ -118,6 +120,14 @@
   border-radius: 1rem 0 1rem 0;
 }
 
+@keyframes scale {
+  0% {
+    transform: scale(10);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .menu__container {
   position: fixed;
   z-index: 6;
@@ -146,6 +156,25 @@
   row-gap: 0.5rem;
 }
 
+.active {
+  color: #6c8a88;
+  stroke: #6c8a88;
+}
+.active:active, .active:target {
+  animation: active 0.5s ease-in-out;
+}
+
+@keyframes active {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .footer__container {
   padding-top: 4rem;
   padding-bottom: 10rem;
@@ -174,6 +203,10 @@
   margin-bottom: 1rem;
   justify-content: center;
   align-items: center;
+}
+.footer__container__content ul a img {
+  margin-right: 1rem;
+  margin-top: 0.2rem;
 }
 .footer__container .button {
   position: relative;
