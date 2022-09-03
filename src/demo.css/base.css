@@ -24,6 +24,10 @@
   font-weight: 700;
 }
 
+.u-fw-bolder {
+  font-weight: 800;
+}
+
 .u-ml {
   margin-left: 3.5rem;
 }

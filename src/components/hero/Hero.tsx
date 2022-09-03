@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="hero__container__content__upper ">
           <div className="hero__container__content__upper__up">
             <img src={smallLogo} alt="logo" className="u-ml" />
-            <h1 className="hero__container__content__upper__up__heading u-ff u-ml u-mr">
+            <h1 className="hero__container__content__upper__up__heading u-ff u-ml u-mr u-fw-bolder">
               <span data-before-content="Jam" className="u-jam"></span> your
               walls with some creative paintings
             </h1>

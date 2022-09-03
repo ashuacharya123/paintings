@@ -19,7 +19,7 @@ const Contact = () => {
       </div>
       <div className="contact__container__content">
         <div className="contact__container__content__container">
-          <div className="contact__container__content__container__heading u-ff  u-mt">
+          <div className="contact__container__content__container__heading u-ff u-fw-bolder u-mt">
             <span
               data-before-content="Connect_with_us"
               className="u-jam"

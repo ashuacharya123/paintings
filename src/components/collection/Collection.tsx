@@ -15,7 +15,7 @@ const Collection = () => {
         <div className="unavailable" id={unavailable ? "unavailable" : ""}>
           Sorry, this is just a demo
         </div>
-        <div className="about__container__content__heading u-ff u-ml u-mt">
+        <div className="about__container__content__heading u-ff u-ml u-mt u-fw-bolder">
           <span data-before-content="Collections" className="u-jam"></span>
         </div>
         <div className="collection__container__content__card__container u-ml u-mr">
