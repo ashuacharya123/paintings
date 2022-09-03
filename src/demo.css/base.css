@@ -1,7 +1,6 @@
-@import url("http://fonts.cdnfonts.com/css/life-savers?styles=20023");
 @import url("http://fonts.cdnfonts.com/css/sansation?styles=756,755,754");
 .u-ff {
-  font-family: "Life Savers", sans-serif;
+  font-family: "Life Savers", sans-serif !important;
 }
 
 .u-mt {
