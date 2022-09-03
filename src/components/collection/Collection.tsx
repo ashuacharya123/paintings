@@ -19,7 +19,7 @@ const Collection = () => {
           {collectionData.map((d) => {
             return (
               <div
-                className="collection__container__content__card__container__card"
+                className="collection__container__content__card__container__card u-active"
                 key={Math.random()}
               >
                 <div className="collection__container__content__card__container__card__content">
@@ -31,7 +31,7 @@ const Collection = () => {
                     <span className=" u-fw-bold">$91</span>
                   </div>
                   <button
-                    className="collection__container__content__card__container__card__button u-btn"
+                    className="collection__container__content__card__container__card__button u-btn "
                     onClick={() => {
                       setUnavailable(true);
                       window.setTimeout(() => setUnavailable(false), 1000);
