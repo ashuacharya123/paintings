@@ -1,0 +1,62 @@
+@use "./variables";
+
+.collection__container {
+  &__content {
+    &__card__container {
+      margin-top: -8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 1.5rem;
+      &__card {
+        border: 0.3rem solid variables.$color-outline;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__content {
+          padding: 2rem;
+        }
+
+        &__image {
+        }
+        &__heading {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 3rem;
+          p {
+            font-size: 1.25rem;
+          }
+        }
+
+        &__button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.unavailable {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 10rem;
+  left: 0;
+  width: 100%;
+  font-size: 2rem;
+  background-color: #fff;
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  z-index: 10;
+}
+
+#unavailable {
+  opacity: 1;
+  visibility: visible;
+}

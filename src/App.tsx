@@ -8,6 +8,7 @@ import About from "./components/about/About";
 import Menu from "./components/menu/Menu";
 import Footer from "./components/footer/Footer";
 import Collection from "./components/collection/Collection";
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Hero />} />
           <Route path="/about" element={<About />} />
           <Route path="/collection" element={<Collection />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Menu />
         <Footer />

@@ -1,0 +1,53 @@
+@use "./variables";
+
+.about__container {
+  &__content {
+    &__heading {
+      font-size: 6rem;
+      margin-bottom: 16rem;
+    }
+    &__card__container {
+      &__card {
+        border: 0.4rem solid variables.$color-outline;
+        margin-bottom: 9rem;
+        & > * {
+          margin-left: 1.55rem;
+          margin-right: 1.55rem;
+        }
+        &__image {
+          position: relative;
+          display: inline-block;
+          height: 11rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transform: translateY(-50%);
+
+          aspect-ratio: 1;
+          &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            z-index: -1;
+            background-color: variables.$color-outline;
+          }
+        }
+        &__heading {
+          margin-top: -4rem;
+          font-size: 2.3rem;
+        }
+        &__paragraph {
+          font-size: 1.3rem;
+          margin-top: 2rem;
+          line-height: 2.3rem;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}

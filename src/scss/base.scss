@@ -1,8 +1,11 @@
 @use "./utilities";
 @use "./hero.scss";
+@use "./about.scss";
 @use "./variables";
 @use "./menu";
 @use "./footer";
+@use "./collection";
+@use "./contact";
 
 @import url("http://fonts.cdnfonts.com/css/life-savers?styles=20023");
 @import url("http://fonts.cdnfonts.com/css/sansation?styles=756,755,754");
@@ -22,6 +25,13 @@ html {
 body {
   font-family: "Sansation", sans-serif;
   background-color: #d0d0d0;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.App {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 img {

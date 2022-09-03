@@ -1,0 +1,86 @@
+.contact__container {
+  &__content {
+    margin-top: 35rem;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+
+    width: 80%;
+    margin-inline: auto;
+
+    position: relative;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 46.024px rgba(0, 0, 0, 0.25);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -32.5rem;
+      left: -20%;
+      background-image: url(../assets/mobile/contact.png);
+      background-size: contain;
+      width: 140%;
+      height: 45rem;
+      z-index: -1;
+    }
+
+    &__container {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: column;
+      row-gap: 6rem;
+      &__heading {
+        font-size: 3rem;
+        margin-top: 1rem;
+        height: 1rem;
+
+        span {
+          &::after {
+            left: -1120%;
+          }
+        }
+      }
+
+      &__contact {
+        width: 80%;
+        margin-bottom: 2rem;
+
+        li {
+          list-style: none;
+          margin-bottom: 1rem;
+          span {
+            font-size: 1.5rem;
+            display: block;
+            margin-bottom: 1rem;
+
+            img {
+              transform: scale(1.4);
+              padding-top: 10px;
+              margin-right: 0.5rem;
+            }
+          }
+
+          input {
+            background-color: #eee;
+            padding: 1rem;
+
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 0.5rem;
+          }
+          &:nth-last-of-type(1) {
+            input {
+              padding: 3rem 0 3rem 0;
+            }
+          }
+        }
+
+        button {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}

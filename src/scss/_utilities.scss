@@ -4,6 +4,10 @@
   font-family: "Life Savers", sans-serif;
 }
 
+.u-mt {
+  margin-top: 3rem;
+}
+
 .u-lsn {
   list-style: none;
 }
@@ -19,12 +23,59 @@
 }
 
 .u-ml {
-  margin-left: 3rem;
+  margin-left: 3.5rem;
 }
 .u-mr {
-  margin-right: 3rem;
+  margin-right: 3.5rem;
 }
 
 .u-ttu {
   text-transform: uppercase;
+}
+
+.u-jam {
+  position: relative;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+
+  animation: rotate 5s linear infinite;
+
+  height: 1rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: white;
+
+  border: 0.5px solid black;
+
+  display: inline-block;
+  color: white;
+
+  &::after {
+    content: attr(data-before-content);
+    position: absolute;
+    display: block;
+    top: 60%;
+    left: -250%;
+    background: #000;
+    transform: scale(30);
+    animation: scale 0.5s linear;
+    animation-fill-mode: forwards;
+    z-index: -1;
+  }
+}
+
+.u-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 6rem 1.5rem 6rem;
+  border: none;
+  color: white;
+  background-color: black;
+  font-family: inherit;
+  font-weight: variables.$font-weight-bold;
+  font-size: 1.5rem;
+  column-gap: 1rem;
+  border-radius: 1rem 0 1rem 0;
 }

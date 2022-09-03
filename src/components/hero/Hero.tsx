@@ -12,7 +12,8 @@ const Hero = () => {
           <div className="hero__container__content__upper__up">
             <img src={smallLogo} alt="logo" className="u-ml" />
             <h1 className="hero__container__content__upper__up__heading u-ff u-ml u-mr">
-              <span></span> your walls with some creative paintings
+              <span data-before-content="Jam" className="u-jam"></span> your
+              walls with some creative paintings
             </h1>
             <p className="hero__container__content__upper__up__paragraph u-fw-bold u-ml u-mr">
               Your favorite painting delivered at your doorstep
@@ -49,7 +50,7 @@ const Hero = () => {
           </p>
           <Link to="/collection">
             {" "}
-            <button className="hero__container__content__lower__btn">
+            <button className="hero__container__content__lower__btn u-btn">
               <span>Choose one</span>
               <img src={linkIcon} alt="" />
             </button>{" "}

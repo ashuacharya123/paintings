@@ -6,29 +6,29 @@ const About = () => {
   return (
     <div className="about__container">
       <div className="about__container__content">
-        <img
-          src={logo}
-          alt="logo"
-          className="u-ml about__container__content__logo"
-        />
-        <div className="about__container__content__card__container">
-          <div className="about__container__content__card__container__card">
-            {aboutData.map((d) => {
-              return (
-                <div key={Math.random()}>
-                  <div className="about__container__content__card__container__card__image">
-                    <img src={d.image} alt="icon" />
-                  </div>
-                  <h2 className="about__container__content__card__container__card__heading u-ff">
-                    {d.heading}
-                  </h2>
-                  <p className="about__container__content__card__container__card__paragraph">
-                    {d.paragraph}
-                  </p>
+        <img src={logo} alt="logo" className="u-ml u-mt" />
+        <div className="about__container__content__heading u-ff u-ml u-mt">
+          <span data-before-content="About_Us" className="u-jam"></span>
+        </div>
+        <div className="about__container__content__card__container u-ml u-mr">
+          {aboutData.map((d) => {
+            return (
+              <div
+                className="about__container__content__card__container__card "
+                key={Math.random()}
+              >
+                <div className="about__container__content__card__container__card__image">
+                  <img src={d.image} alt="icon" />
                 </div>
-              );
-            })}
-          </div>
+                <h2 className="about__container__content__card__container__card__heading u-ff">
+                  {d.heading}
+                </h2>
+                <p className="about__container__content__card__container__card__paragraph">
+                  {d.paragraph}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
