@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../../assets/mobile/logo.svg";
 import { collectionData } from "./data";
 import linkIcon from "../../assets/mobile/icons/btn.svg";
@@ -8,7 +9,9 @@ const Collection = () => {
   return (
     <div className="collection__container">
       <div className="collection__container__content">
-        <img src={logo} alt="logo" className="u-ml u-mt" />
+        <Link to="/">
+          <img src={logo} alt="logo" className="u-ml u-mt" />
+        </Link>
         <div className="unavailable" id={unavailable ? "unavailable" : ""}>
           Sorry, this is just a demo
         </div>

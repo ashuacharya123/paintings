@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { aboutData } from "./data";
 import logo from "../../assets/mobile/logo.svg";
 
@@ -6,7 +7,9 @@ const About = () => {
   return (
     <div className="about__container">
       <div className="about__container__content">
-        <img src={logo} alt="logo" className="u-ml u-mt" />
+        <Link to="/">
+          <img src={logo} alt="logo" className="u-ml u-mt" />
+        </Link>
         <div className="about__container__content__heading u-ff u-ml u-mt">
           <span data-before-content="About_Us" className="u-jam"></span>
         </div>

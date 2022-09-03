@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../../assets/mobile/logo.svg";
 import name from "../../assets/mobile/icons/name.svg";
 import email from "../../assets/mobile/icons/email.svg";
@@ -10,7 +11,9 @@ const Contact = () => {
   const [unavailable, setUnavailable] = useState<boolean>(false);
   return (
     <div className="contact__container">
-      <img src={logo} alt="logo" className="u-ml u-mt" />
+      <Link to="/">
+        <img src={logo} alt="logo" className="u-ml u-mt" />
+      </Link>
       <div className="unavailable" id={unavailable ? "unavailable" : ""}>
         Sorry, this is just a demo
       </div>
