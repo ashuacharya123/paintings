@@ -8,6 +8,7 @@
     }
     &__card__container {
       &__card {
+        margin-inline: auto;
         border: 0.4rem solid variables.$color-outline;
         margin-bottom: 9rem;
         & > * {

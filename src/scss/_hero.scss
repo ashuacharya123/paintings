@@ -76,3 +76,15 @@
     transform: scale(1);
   }
 }
+
+@media screen and (min-width: 410px) {
+  .hero__container__content__lower {
+    margin-top: -15rem;
+    @media screen and (min-width: 490px) {
+      margin-top: -20rem;
+    }
+    @media screen and (min-width: 590px) {
+      margin-top: -25rem;
+    }
+  }
+}

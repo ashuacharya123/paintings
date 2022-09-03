@@ -38,6 +38,15 @@ img {
   max-width: 100%;
 }
 
+@media screen and (max-width: 371px) {
+  html {
+    font-size: 55%;
+    @media screen and (max-width: 330px) {
+      font-size: 49%;
+    }
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
