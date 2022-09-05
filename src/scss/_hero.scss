@@ -77,14 +77,105 @@
   }
 }
 
-@media screen and (min-width: 410px) {
+@media screen and (min-width: 410px) and (max-width: 650px) {
   .hero__container__content__lower {
     margin-top: -15rem;
-    @media screen and (min-width: 490px) {
+    @media screen and (min-width: 490px) and (max-width: 650px) {
       margin-top: -20rem;
     }
-    @media screen and (min-width: 590px) {
+    @media screen and (min-width: 590px) and (max-width: 650px) {
       margin-top: -25rem;
+    }
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .hero__container {
+    min-height: 95vh;
+    margin-top: 7rem;
+    &__content {
+      &__upper {
+        display: flex;
+        &__up {
+          flex: 90%;
+
+          .logo {
+            display: none;
+          }
+          &__heading {
+            font-size: 6.5rem;
+            span {
+              margin-bottom: 4rem;
+              margin-left: 5rem;
+              margin-right: 6rem;
+            }
+          }
+
+          &__paragraph {
+            font-size: 2.2rem;
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+          }
+          &__images {
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              background-color: #d9d9d9;
+              width: 100vw;
+              height: 100%;
+              z-index: -1;
+            }
+            li {
+            }
+          }
+        }
+        &__low {
+          &__images {
+            li {
+              &:nth-of-type(1) {
+                grid-area: 1/2;
+                transform: translateY(30%) translateX(-70%);
+                outline: 0.8rem solid variables.$color-outline;
+                outline-offset: 2rem;
+                animation: outline 3s linear infinite;
+              }
+              &:nth-of-type(3) {
+                grid-area: 2/2;
+                transform: translateY(15%) translateX(-20%) scale(0.8);
+                box-shadow: inset 0px 0px 6.47445px 1.5234px rgba(0, 0, 0, 0.25);
+                z-index: -1;
+              }
+              &:nth-of-type(2) {
+                //   grid-area: 2/2;
+                transform: translateY(110%) translateX(-30%) scale(0.8);
+                box-shadow: 0px 0px 25rem 2rem rgba(0, 0, 0, 0.48);
+
+                outline: none;
+                outline-offset: 2rem;
+                animation: none;
+              }
+            }
+          }
+        }
+      }
+      &__lower {
+        margin-top: -6rem;
+        &__paragraph {
+          font-size: 1.93rem;
+          margin-bottom: 1.5rem;
+        }
+        a {
+          text-decoration: none;
+          button {
+            font-size: 2.5rem;
+            padding: 2rem 9rem 2rem 9rem;
+          }
+        }
+      }
     }
   }
 }

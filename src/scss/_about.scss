@@ -52,3 +52,38 @@
     }
   }
 }
+
+@media screen and (min-width: 650px) {
+  .about__container {
+    &__content {
+      &__heading {
+        font-size: 8rem;
+        margin-bottom: 20rem;
+      }
+      &__card__container {
+        margin-inline: auto;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 1rem;
+
+        &__card {
+          &__image {
+            height: 15rem;
+          }
+          &__heading {
+            margin-top: -5rem;
+            font-size: 3.2rem;
+          }
+          &__paragraph {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            line-height: 3rem;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

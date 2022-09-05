@@ -1,3 +1,7 @@
+.svg {
+  stroke: #ffffff;
+  color: #ffffff;
+}
 .menu__container {
   position: fixed;
   z-index: 6;
@@ -9,6 +13,7 @@
   &__content {
     height: 100%;
     &__logo {
+      display: none;
     }
     &__links {
       height: 100%;
@@ -49,5 +54,49 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .svg {
+    stroke: #000000;
+    color: #000000;
+  }
+  .menu__container {
+    position: fixed;
+    z-index: 6;
+    bottom: 0;
+    top: 0;
+    background-color: #d0d0d0;
+    height: 10rem;
+    width: 100%;
+
+    &__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__logo {
+        display: inline-block;
+        flex: 80%;
+      }
+      &__links {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        a {
+          color: #000000;
+          flex-direction: row;
+          column-gap: 0.5rem;
+          font-size: 1.5rem;
+          span {
+            svg {
+            }
+          }
+        }
+      }
+    }
   }
 }

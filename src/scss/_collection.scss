@@ -60,3 +60,18 @@
   opacity: 1;
   visibility: visible;
 }
+
+@media screen and (min-width: 650px) {
+  .collection__container {
+    margin-bottom: 2rem;
+    &__content {
+      &__card__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        row-gap: 1.5rem;
+        column-gap: 1.5rem;
+      }
+    }
+  }
+}

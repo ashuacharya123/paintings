@@ -84,3 +84,108 @@
     }
   }
 }
+
+@media screen and (min-width: 650px) {
+  .contact__container {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    a {
+      img {
+        display: none;
+      }
+    }
+    &__content {
+      margin-top: 15rem;
+      background-color: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 35%;
+      margin-inline: auto;
+
+      position: relative;
+      border-radius: 0.5rem;
+      box-shadow: 0px 0px 46.024px rgba(0, 0, 0, 0.25);
+      margin-right: 52%;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 3rem;
+
+        left: 85%;
+        background-image: url(../assets/pc/contact.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 60rem;
+        height: 200%;
+        z-index: -2;
+        transform: scale(1.2);
+      }
+
+      &__container {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 6rem;
+        &__heading {
+          font-size: 4rem;
+          margin-top: 2rem;
+          height: 1rem;
+          margin-bottom: 3rem;
+
+          span {
+            &::after {
+              left: -1520%;
+            }
+          }
+        }
+
+        &__contact {
+          width: 80%;
+          margin-bottom: 5rem;
+
+          li {
+            list-style: none;
+            margin-bottom: 2rem;
+            span {
+              font-size: 1.8rem;
+              display: block;
+              margin-bottom: 1rem;
+
+              img {
+                transform: scale(1.4);
+                padding-top: 10px;
+                margin-right: 0.5rem;
+              }
+            }
+
+            input {
+              background-color: #eee;
+              padding: 1.5rem;
+
+              width: 100%;
+              border: 1px solid black;
+              border-radius: 0.5rem;
+            }
+            &:nth-last-of-type(1) {
+              input {
+                padding: 3rem 0 3rem 0;
+              }
+            }
+          }
+
+          button {
+            font-size: 2rem;
+            margin-top: 3rem;
+          }
+        }
+      }
+    }
+  }
+}
