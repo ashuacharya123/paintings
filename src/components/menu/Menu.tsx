@@ -7,7 +7,9 @@ const Menu = () => {
     <div className="menu__container">
       <div className="menu__container__content">
         <div className="menu__container__content__logo u-ml">
-          <img src={logo} alt="" />
+          <NavLink to="/">
+            <img src={logo} alt="" />
+          </NavLink>
         </div>
         <ul className="menu__container__content__links u-ttu">
           <NavLink to="/">
