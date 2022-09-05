@@ -15,25 +15,25 @@ const Footer = () => {
         <img src={logo} alt="logo" />
         <p>@copyright 2022 paintings.com</p>
         <ul>
-          <Link to="/">
+          <Link to="/" onClick={topFunction}>
             <span>
               <img src={arrow} alt="" />
             </span>
             <span>Home</span>
           </Link>
-          <Link to="/about">
+          <Link to="/about" onClick={topFunction}>
             <span>
               <img src={arrow} alt="" />
             </span>
             <span>About</span>
           </Link>
-          <Link to="/collection">
+          <Link to="/collection" onClick={topFunction}>
             <span>
               <img src={arrow} alt="" />
             </span>
             <span>Collection</span>
           </Link>
-          <Link to="/contact">
+          <Link to="/contact" onClick={topFunction}>
             <span>
               <img src={arrow} alt="" />
             </span>
