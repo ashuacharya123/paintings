@@ -3,16 +3,20 @@ import { NavLink } from "react-router-dom";
 import logo from "../../assets/pc/logo.svg";
 
 const Menu = () => {
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
   return (
     <div className="menu__container">
       <div className="menu__container__content">
         <div className="menu__container__content__logo u-ml">
-          <NavLink to="/">
+          <NavLink to="/" onClick={topFunction}>
             <img src={logo} alt="" />
           </NavLink>
         </div>
         <ul className="menu__container__content__links u-ttu">
-          <NavLink to="/">
+          <NavLink to="/" onClick={topFunction}>
             {({ isActive }) => (
               <>
                 <span>
@@ -37,7 +41,7 @@ const Menu = () => {
               </>
             )}
           </NavLink>
-          <NavLink to="/about">
+          <NavLink to="/about" onClick={topFunction}>
             {({ isActive }) => (
               <>
                 <span>
@@ -70,7 +74,7 @@ const Menu = () => {
               </>
             )}
           </NavLink>
-          <NavLink to="/collection">
+          <NavLink to="/collection" onClick={topFunction}>
             {({ isActive }) => (
               <>
                 <span>
@@ -127,7 +131,7 @@ const Menu = () => {
               </>
             )}
           </NavLink>
-          <NavLink to="/contact">
+          <NavLink to="/contact" onClick={topFunction}>
             {({ isActive }) => (
               <>
                 <span>

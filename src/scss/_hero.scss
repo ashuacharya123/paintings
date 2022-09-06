@@ -92,6 +92,9 @@
 @media screen and (min-width: 650px) {
   .hero__container {
     min-height: 95vh;
+    @media screen and (min-width: 650px) and (max-width: 1000px) {
+      min-height: 65vh;
+    }
     margin-top: 7rem;
     &__content {
       &__upper {
@@ -134,6 +137,18 @@
           }
         }
         &__low {
+          @media screen and (min-width: 650px) and (max-width: 1033px) {
+            flex: 80%;
+            @media screen and (min-width: 650px) and (max-width: 883px) {
+              flex: 70%;
+            }
+            @media screen and (min-width: 650px) and (max-width: 825px) {
+              flex: 60%;
+            }
+            @media screen and (min-width: 650px) and (max-width: 777px) {
+              flex: 50%;
+            }
+          }
           &__images {
             li {
               &:nth-of-type(1) {
@@ -164,6 +179,9 @@
       }
       &__lower {
         margin-top: -6rem;
+        @media screen and (min-width: 650px) and (max-width: 825px) {
+          margin-top: 6rem;
+        }
         &__paragraph {
           font-size: 1.93rem;
           margin-bottom: 1.5rem;

@@ -193,6 +193,13 @@
     min-height: 95vh;
     margin-top: 7rem;
   }
+}
+@media screen and (min-width: 650px) and (min-width: 650px) and (max-width: 1000px) {
+  .hero__container {
+    min-height: 65vh;
+  }
+}
+@media screen and (min-width: 650px) {
   .hero__container__content__upper {
     display: flex;
   }
@@ -228,6 +235,28 @@
     height: 100%;
     z-index: -1;
   }
+}
+@media screen and (min-width: 650px) and (min-width: 650px) and (max-width: 1033px) {
+  .hero__container__content__upper__low {
+    flex: 80%;
+  }
+}
+@media screen and (min-width: 650px) and (min-width: 650px) and (max-width: 1033px) and (min-width: 650px) and (max-width: 883px) {
+  .hero__container__content__upper__low {
+    flex: 70%;
+  }
+}
+@media screen and (min-width: 650px) and (min-width: 650px) and (max-width: 1033px) and (min-width: 650px) and (max-width: 825px) {
+  .hero__container__content__upper__low {
+    flex: 60%;
+  }
+}
+@media screen and (min-width: 650px) and (min-width: 650px) and (max-width: 1033px) and (min-width: 650px) and (max-width: 777px) {
+  .hero__container__content__upper__low {
+    flex: 50%;
+  }
+}
+@media screen and (min-width: 650px) {
   .hero__container__content__upper__low__images li:nth-of-type(1) {
     grid-area: 1/2;
     transform: translateY(30%) translateX(-70%);
@@ -248,13 +277,24 @@
     outline-offset: 2rem;
     animation: none;
   }
+}
+@media screen and (min-width: 650px) {
   .hero__container__content__lower {
     margin-top: -6rem;
   }
+}
+@media screen and (min-width: 650px) and (min-width: 650px) and (max-width: 825px) {
+  .hero__container__content__lower {
+    margin-top: 6rem;
+  }
+}
+@media screen and (min-width: 650px) {
   .hero__container__content__lower__paragraph {
     font-size: 1.93rem;
     margin-bottom: 1.5rem;
   }
+}
+@media screen and (min-width: 650px) {
   .hero__container__content__lower a {
     text-decoration: none;
   }
@@ -751,6 +791,31 @@
 
 html {
   font-size: 62.5%;
+}
+@media screen and (min-width: 650px) and (max-width: 1406px) {
+  html {
+    font-size: 55.5%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 1293px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 1202px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 1119px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 1033px) {
+  html {
+    font-size: 35%;
+  }
 }
 
 body {
