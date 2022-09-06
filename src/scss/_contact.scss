@@ -88,7 +88,22 @@
 @media screen and (min-width: 650px) {
   .contact__container {
     overflow: hidden;
-    height: 100vh;
+    min-height: 100vh;
+    @media screen and (max-height: 700px) {
+      min-height: 105vh;
+    }
+    @media screen and (max-height: 630px) {
+      min-height: 115vh;
+    }
+    @media screen and (max-height: 580px) {
+      min-height: 125vh;
+    }
+    @media screen and (max-height: 530px) {
+      min-height: 135vh;
+    }
+    @media screen and (max-height: 585px) {
+      min-height: 145vh;
+    }
     display: flex;
     justify-content: start;
     align-items: center;

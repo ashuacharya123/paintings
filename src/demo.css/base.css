@@ -199,6 +199,31 @@
     min-height: 65vh;
   }
 }
+@media screen and (min-width: 650px) and (max-height: 700px) {
+  .hero__container {
+    min-height: 105vh;
+  }
+}
+@media screen and (min-width: 650px) and (max-height: 630px) {
+  .hero__container {
+    min-height: 115vh;
+  }
+}
+@media screen and (min-width: 650px) and (max-height: 580px) {
+  .hero__container {
+    min-height: 125vh;
+  }
+}
+@media screen and (min-width: 650px) and (max-height: 530px) {
+  .hero__container {
+    min-height: 135vh;
+  }
+}
+@media screen and (min-width: 650px) and (max-height: 585px) {
+  .hero__container {
+    min-height: 145vh;
+  }
+}
 @media screen and (min-width: 650px) {
   .hero__container__content__upper {
     display: flex;
@@ -697,14 +722,43 @@
 @media screen and (min-width: 650px) {
   .contact__container {
     overflow: hidden;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: start;
     align-items: center;
   }
+}
+@media screen and (min-width: 650px) and (max-height: 700px) {
+  .contact__container {
+    min-height: 105vh;
+  }
+}
+@media screen and (min-width: 650px) and (max-height: 630px) {
+  .contact__container {
+    min-height: 115vh;
+  }
+}
+@media screen and (min-width: 650px) and (max-height: 580px) {
+  .contact__container {
+    min-height: 125vh;
+  }
+}
+@media screen and (min-width: 650px) and (max-height: 530px) {
+  .contact__container {
+    min-height: 135vh;
+  }
+}
+@media screen and (min-width: 650px) and (max-height: 585px) {
+  .contact__container {
+    min-height: 145vh;
+  }
+}
+@media screen and (min-width: 650px) {
   .contact__container a img {
     display: none;
   }
+}
+@media screen and (min-width: 650px) {
   .contact__container__content {
     margin-top: 15rem;
     background-color: #eee;

@@ -95,6 +95,21 @@
     @media screen and (min-width: 650px) and (max-width: 1000px) {
       min-height: 65vh;
     }
+    @media screen and (max-height: 700px) {
+      min-height: 105vh;
+    }
+    @media screen and (max-height: 630px) {
+      min-height: 115vh;
+    }
+    @media screen and (max-height: 580px) {
+      min-height: 125vh;
+    }
+    @media screen and (max-height: 530px) {
+      min-height: 135vh;
+    }
+    @media screen and (max-height: 585px) {
+      min-height: 145vh;
+    }
     margin-top: 7rem;
     &__content {
       &__upper {
